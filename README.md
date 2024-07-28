@@ -6,7 +6,7 @@ Figure_1_Eurobarometer_data.R file receives the Eurobarometer.csv file as data a
 This gives as output: Eurobarometer_final.csv
 ## A_figure1.m 
 This is the matlab file that creates Figure 1 of the draft. 
-## B_static_game_prop1_fig1_figB2.m
+## B_static_game_prop1_fig2_figB2.m
 This is the matlab file that solves the first order differential equation of the static game and creates Figure 2 and Figure B2. 
 ## C_dynamic_game_prop2_prop3_fig3_fig4.m
 This is the matlab file that gives the solution of the dynamic game presented in Proposition 2 and creates Figure 3 and Figure 4. 
