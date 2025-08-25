@@ -3,7 +3,8 @@ clear all
 close all
 clc
 % Read thE CSV files with the Eurobarometer data
-data = readtable('./Data_figure1/Eurobarometer_final.csv');
+% Use your directory
+data = readtable('MATLAB Drive/ARIA/Eurobarometer.csv');
 % countries = unique(data.Country);
 
 % Rank them for the same colouring across the two panels
@@ -30,8 +31,8 @@ data = sortrows(data, 'rank');
 countries = unique(data.Country, 'stable');
 
 % Insert the left panel. 
-data_med = readtable('./Data_figure1/Eurobarometer_final_pigs.csv')
-countries_med = unique(data_med.Country)
+data_med = readtable('./Data_figure1/Eurobarometer_pigs.csv');
+countries_med = unique(data_med.Country);
 
 % Define line styles and colors
 lineStyles = {'-', '--', ':', '-.', '-', '--', ':', '-.'};
@@ -124,5 +125,4 @@ set(gcf, 'PaperPosition', [1, 1, 12, 5]); % Set the paper size to match the figu
 
 
 % % Export the plot as a PNG
-exportgraphics(gcf, 'figure_data_new.png', 'Resolution', 300); % Save as PNG with 300 DPI resolution
-
+exportgraphics(gcf, 'Figure_1.png', 'Resolution', 300); % Save as PNG with 300 DPI resolution
